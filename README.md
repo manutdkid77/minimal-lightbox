@@ -7,11 +7,11 @@ A simple lightbox module for displaying an image as a scaled up image.
 
 2. To set up the lightbox on your page, inlucde both the css and javascript as follows:
     * Include the CSS at the top of your page in your <head> tag:
-        ```html
+        ```
             <link href="path/to/lightbox.css" rel="stylesheet">
         ```
     * Include the Javascript at the bottom of your page before the closing              </body> tag:
-        ```html
+        ```
             <script src="path/to/lightbox.js"></script>
         ```
 3. Minimal Lightbox requires jQuery, so make sure it is included
@@ -31,7 +31,7 @@ A simple lightbox module for displaying an image as a scaled up image.
     ```
 2. The content of the ``<alt>`` tag  will be displayed below the image in the lightbox.
 3. In your ``script.js`` file, initialize the plugin as follows.
-    ```js
+    ```
         $('.lightbox-link').lightbox();
     ```
     
