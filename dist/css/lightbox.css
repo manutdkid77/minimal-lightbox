@@ -1,0 +1,27 @@
+.overlay{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: none;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	top: 0;
+	background: rgba(0,0,0,0.8);
+}
+.overlay-img{
+	position: relative;
+	max-width: 80%;
+	height: auto;
+}
+.overlay-text{
+	font-size: 1.5em;
+    padding: 1em 0;
+    color: whitesmoke;
+}
+
+@media(min-width: 769px){
+	.overlay-img{
+		max-width: 50%;
+	}
+}
