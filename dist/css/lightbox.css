@@ -1,3 +1,7 @@
+.lightbox-link{
+	cursor: pointer;
+}
+
 .overlay{
 	position: absolute;
 	height: 100%;
