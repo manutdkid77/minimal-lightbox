@@ -8,12 +8,16 @@
 	$('body').append($overlay);
 
 	$.fn.lightbox = function(){
-		this.click(function(){
+		this.click(function(link){
+			link.preventDefault();
 
 			if(!$(this).is('a') && !$(this).hasClass('lightbox-link'))
 				return 'Clicked item is not a link with class .lightbox-link';
 
-			$overlay.css('display','flex').hide().fadeIn();
+			$overlay.css({
+				'display':'flex',
+				'top':$(document).scrollTop()
+				}).hide().fadeIn();
 			$overlayImg.attr('src',$(this).children('img').attr('src'));
 			$overlayText.text($(this).children('img').attr('alt'));
 			$('body').css('overflow','hidden');		
