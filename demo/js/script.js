@@ -1,0 +1,1 @@
+$('.lightbox-link').lightbox();
